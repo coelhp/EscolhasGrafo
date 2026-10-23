@@ -59,9 +59,7 @@ Um grafo é uma estrutura matemática utilizada para representar elementos e as 
 
 Formalmente:
 
-$$
-G=(V,E)
-$$
+$G=(V,E)$
 
 Em que:
 
@@ -76,9 +74,7 @@ Um grafo ponderado possui valores associados às suas arestas. Esses valores pod
 
 O peso de uma aresta \(e\) é representado por:
 
-$$
-w(e)
-$$
+$w(e)$
 
 O custo total de um caminho corresponde à soma dos pesos das arestas percorridas.
 
@@ -88,10 +84,7 @@ O problema do menor caminho consiste em encontrar uma sequência de arestas que 
 
 Para uma origem \(s\) e um destino \(t\), busca-se:
 
-$$
-P^*=\underset{P:s\rightarrow t}{\arg\min}
-\sum_{e\in P}w(e)
-$$
+$P^*=\underset{P:s\rightarrow t}{\arg\min}\sum_{e\in P}w(e)$
 
 Neste projeto:
 
@@ -137,9 +130,7 @@ O algoritmo procura uma rota entre os vértices `0` e `3` que minimize o custo a
 
 A distância mínima é dada por:
 
-$$
-d(0,3)=\min_{P:0\rightarrow3}\sum_{e\in P}w(e)
-$$
+$d(0,3)=\min_{P:0\rightarrow3}\sum_{e\in P}w(e)$
 
 Essa formulação permite comparar diferentes rotas e identificar aquela que apresenta o menor valor total.
 
@@ -147,17 +138,17 @@ Essa formulação permite comparar diferentes rotas e identificar aquela que apr
 
 O programa é organizado em etapas que vão da construção do grafo à apresentação da solução.
 
-### Etapa 1 — Preparação do ambiente
+### Etapa 1: Preparação do ambiente
 
 A biblioteca `igraph` é carregada para disponibilizar as funções de construção, análise e visualização de grafos.
 
-### Etapa 2 — Construção do grafo
+### Etapa 2: Construção do grafo
 
 As conexões entre os vértices são declaradas no código por meio da função `graph()`.
 
 Como o grafo é não direcionado, cada conexão pode ser percorrida em ambos os sentidos.
 
-### Etapa 3 — Definição dos pesos
+### Etapa 3: Definição dos pesos
 
 Os pesos são atribuídos às arestas por meio do atributo `weight`.
 
