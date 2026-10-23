@@ -154,19 +154,19 @@ Os pesos são atribuídos às arestas por meio do atributo `weight`.
 
 Esses valores são utilizados para calcular o custo acumulado de cada rota.
 
-### Etapa 4 — Cálculo da distância mínima
+### Etapa 4: Cálculo da distância mínima
 
 A função `distances()` calcula a distância entre os vértices de origem e destino.
 
 O resultado corresponde ao menor custo acumulado entre os pontos considerados.
 
-### Etapa 5 — Identificação do caminho
+### Etapa 5: Identificação do caminho
 
 A função `shortest_paths()` identifica os vértices e as arestas que compõem o caminho selecionado.
 
 Essa informação permite recuperar a sequência de conexões que conduz da origem ao destino.
 
-### Etapa 6 — Visualização da solução
+### Etapa 6: Visualização da solução
 
 O programa modifica as cores dos vértices e das arestas para destacar o caminho encontrado.
 
@@ -247,25 +247,19 @@ O programa construirá o grafo, calculará o caminho mínimo entre os vértices 
 
 A partir das conexões e dos pesos definidos no código, o caminho de menor custo entre os vértices `0` e `3` é:
 
-$$\boxed{0\rightarrow2\rightarrow6\rightarrow3}$$
+$\boxed{0\rightarrow2\rightarrow6\rightarrow3}$
 
 O custo acumulado é calculado pela soma dos pesos das três arestas:
 
-$$
-d(0,3)=w(0,2)+w(2,6)+w(6,3)
-$$
+$d(0,3)=w(0,2)+w(2,6)+w(6,3)$
 
 Substituindo os valores:
 
-$$
-d(0,3)=3{,}1+3{,}0+4{,}8
-$$
+$d(0,3)=3{,}1+3{,}0+4{,}8$
 
 Portanto:
 
-$$
-\boxed{d(0,3)=10{,}9}
-$$
+$\boxed{d(0,3)=10{,}9}$
 
 ### 9.1. Interpretação
 
